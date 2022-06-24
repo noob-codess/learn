@@ -15,8 +15,7 @@ namespace Company.Function
         [FunctionName("GetCount")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            [CosmosDB(databaseName:"learnDB", , collectionName: "learnContainer",
-    ConnectionStringSetting = "AzureResumeConnectionString" )]IAsyncCollector<dynamic> documentsOut,
+           // [CosmosDB(databaseName:"learnDB",collectionName: "learnContainer",ConnectionStringSetting = "AzureResumeConnectionString" )]IAsyncCollector<dynamic> documentsOut,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
