@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) =>{
     getVisitCount();
 })
-const functionAPI = '';
+const functionAPI = 'http://localhost:7071/api/GetCount';
 const getVisitCount = () => {
     let count = 30;
     fetch(functionAPI).then(response => {
